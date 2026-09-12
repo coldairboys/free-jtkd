@@ -4,29 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇳 印度 (India) 01 - xiaohe
+- name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 194.61.31.126
+  server: 188.114.97.1
   port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: firefox
+  servername: bold-term-4edd.mbigspot.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: bold-term-4edd.mbigspot.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇳 印度 (India) 01 - xiaohe
+  - 🇨🇿 CZ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇳 印度 (India) 01 - xiaohe
+  - 🇨🇿 CZ 01 - xiaohe
 rules:
 - MATCH,PROXIES
