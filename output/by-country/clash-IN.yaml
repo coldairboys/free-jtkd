@@ -18,19 +18,7 @@ proxies:
   client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - xiaohe
   type: vless
-  server: 34.47.245.203
-  port: 443
-  uuid: 3fed34dc-2fe6-4fe0-86e7-a80213f9b7cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: dB68n-Vyph0_KBtBIe45b5GCB4F1IqpBF_ohlN-KpkY
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - xiaohe
-  type: vless
-  server: 13.200.106.232
+  server: 139.84.135.130
   port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
@@ -42,9 +30,21 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
+- name: 🇮🇳 印度 (India) 03 - xiaohe
+  type: vless
+  server: 34.47.245.203
+  port: 443
+  uuid: 3fed34dc-2fe6-4fe0-86e7-a80213f9b7cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: dB68n-Vyph0_KBtBIe45b5GCB4F1IqpBF_ohlN-KpkY
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 04 - xiaohe
   type: vless
-  server: 139.84.135.130
+  server: 13.200.106.232
   port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
