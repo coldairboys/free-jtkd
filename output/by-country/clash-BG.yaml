@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - xiaohe
+- name: 🇧🇬 BG 01 - xiaohe
   type: vless
-  server: 185.255.179.11
-  port: 9443
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  server: 172.67.209.139
+  port: 443
+  uuid: cbfeff27-6e7a-4e99-b5ad-6b830e191741
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hub-de-03.hanvpn.cc
+  servername: srv-b890f5-eb36b6.omidiabolfazl155-c5f1.workers.dev
   network: ws
   ws-opts:
-    path: /de03-ws-8e47a
+    path: /vl/wk14rIXEvRltsm88Nsboi?ed=2560
     headers:
-      Host: hub-de-03.hanvpn.cc
+      Host: srv-b890f5-eb36b6.omidiabolfazl155-c5f1.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🇧🇬 BG 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🇧🇬 BG 01 - xiaohe
 rules:
 - MATCH,PROXIES
