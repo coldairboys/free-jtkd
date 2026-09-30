@@ -4,9 +4,65 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 IE 01 - xiaohe
+- name: 🇩🇰 DK 01 - xiaohe
   type: vless
-  server: 104.26.10.213
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome?ed#TELEGRAM--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇩🇰 DK 02 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: //?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇩🇰 DK 03 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /?Telegram---V2ray_confiig
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇩🇰 DK 04 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET?ed=512
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇩🇰 DK 05 - xiaohe
+  type: vless
+  server: 104.21.55.18
   port: 443
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
@@ -18,83 +74,25 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇮🇪 IE 02 - xiaohe
-  type: vless
-  server: 104.26.0.226
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /+
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇮🇪 IE 03 - xiaohe
-  type: ss
-  server: 20.123.34.66
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: r5D6YOSrT6kC76ro
-  udp: true
-- name: 🇮🇪 IE 04 - xiaohe
-  type: vless
-  server: 45.141.234.138
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇮🇪 IE 05 - xiaohe
-  type: vless
-  server: 104.26.0.226
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /+
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇮🇪 IE 06 - xiaohe
-  type: ss
-  server: 20.123.34.66
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: r5D6YOSrT6kC76ro
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 IE 01 - xiaohe
-  - 🇮🇪 IE 02 - xiaohe
-  - 🇮🇪 IE 03 - xiaohe
-  - 🇮🇪 IE 04 - xiaohe
-  - 🇮🇪 IE 05 - xiaohe
-  - 🇮🇪 IE 06 - xiaohe
+  - 🇩🇰 DK 01 - xiaohe
+  - 🇩🇰 DK 02 - xiaohe
+  - 🇩🇰 DK 03 - xiaohe
+  - 🇩🇰 DK 04 - xiaohe
+  - 🇩🇰 DK 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 IE 01 - xiaohe
-  - 🇮🇪 IE 02 - xiaohe
-  - 🇮🇪 IE 03 - xiaohe
-  - 🇮🇪 IE 04 - xiaohe
-  - 🇮🇪 IE 05 - xiaohe
-  - 🇮🇪 IE 06 - xiaohe
+  - 🇩🇰 DK 01 - xiaohe
+  - 🇩🇰 DK 02 - xiaohe
+  - 🇩🇰 DK 03 - xiaohe
+  - 🇩🇰 DK 04 - xiaohe
+  - 🇩🇰 DK 05 - xiaohe
 rules:
 - MATCH,PROXIES
