@@ -5,14 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - xiaohe
-  type: vless
-  server: 37.202.228.219
-  port: 443
-  uuid: ff1906a5-a446-44e4-8e72-4e2d61775fa0
+  type: vmess
+  server: Ir.wbzo.ir
+  port: 2080
+  uuid: b7e3e8af-d1ca-45da-a95f-8b9ad77398b1
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ns2.irts.lol
 proxy-groups:
 - name: PROXIES
   type: select
